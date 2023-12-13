@@ -1,0 +1,101 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.testimonial-pic img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    filter: grayscale(1);
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.testimonial-pic img.active {
+    filter: grayscale(0);
+    border-radius: 50%;
+}
+.testimonial .content-wrapper {
+    height: 100px;
+    overflow: hidden;
+}
+
+.testimonial .content {
+    display: none;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonial .content.active {
+    display: block;
+}
+
+.testimonial-section h1 {
+    padding: 50px 0;
+}
+
+.testimonial-section {
+    margin: auto;
+    border-radius: 1%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 120px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 10px 15px 50px 15px;
+    z-index: 0;
+}
+
+#additional-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote footer {
+    background-color: #6cb649;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+.intro-statement {
+    padding-bottom: 50px;
+}
+
+#consultation-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e76b3e;
+}

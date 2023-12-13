@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <title>Reservations</title>
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="../index.html">Home</a>
+        <a href="../webpages/pricing.html">Pricing</a>
+        <a href="../webpages/testimonials.html">Testimonials</a>
+        <a href="../webpages/reservation.html">Consultation</a>
+        <a href="../webpages/contact.html">Contact</a>
+        <a href="../webpages/about.html">About us</a>
+    </nav>
+    <header id="top">
+        <div class="header-style">
+            <img src="../images/wedding_logo.png" alt="Location Image">
+            <h1>Consultation Reservations</h1>
+        </div>
+    </header>
+    <main>
+        <fieldset>
+        <legend>Wedding Consultation Appointment Request</legend>
+        <form id="reservation" name="reservation" action="reserve.html">
+            <br>
+            <div>
+                <label for="first_name">First name: &emsp; &nbsp; </label>
+                <input type="text" id="first_name" name="first_name" placeholder="First">
+            </div>
+            <br>
+            <div>
+                <label for="last_name">Last name: &emsp; &ensp; </label>
+                <input type="text" id="last_name" name="last_name" placeholder="Last">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email: &emsp; &emsp; &emsp; </label>
+                <input type="email" id="email" name="email" placeholder="email@example.com">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone: &emsp; &emsp; &emsp;</label>
+                <input type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <br>
+            <div>
+                <label for="date">Desired appointment date: &emsp; &ensp; &nbsp; </label>
+                <input type="date" id="date" name="date">
+            </div>
+            <br>
+            <div id="wedding_season">
+                <label>Expected wedding season:</label>
+                <input type="radio" id="winter" name="wedding_season" value="winter">
+                <label for="winter">Winter</label>
+                <input type="radio" id="spring" name="wedding_season" value="spring">
+                <label for="spring">Spring</label>
+                <input type="radio" id="summer" name="wedding_season" value="summer">
+                <label for="summer">Summer</label>
+                <input type="radio" id="fall" name="wedding_season" value="fall">
+                <label for="fall">Fall</label>
+            </div>
+            <br>
+            <div id="dropdown">
+                <label for="guests">Estimated number of guests:</label>
+                <select name="guests" id="guests">
+                <option value="option_one">Less than 50</option>
+                <option value="option_two">50-100</option>
+                <option value="option_three">101-150</option>
+                <option value="option_four">151-200</option>
+                <option value="option_five">More than 200</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="submit" value="Submit Request">
+            </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <h3>Hours:</h3>
+            <ul>
+                <li>Mon-Sat: 8am - 6pm</li>
+                <li>Sun: 10am - 4pm</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Locations:</h3>
+            <ul>
+                <li>Toronto</li>
+                <li>Waterloo</li>
+                <li>Hamilton</li>
+                <li>Aurora</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Quick Links:</h3>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../webpages/testimonials.html">Testimonials</a>
+                <a href="../webpages/reservation.html">Consultation</a>
+                <a href="../webpages/contact.html">Contact</a>
+                <a href="../webpages/pricing.html">Pricing</a>
+                <a href="../webpages/about.html">About</a>
+            </nav>
+        </div>
+        <a href="#top" id="backToTopButton" title="Go to top">↑</a>
+        <p id="copyright">Copyright © Everlasting Dreams Weddings</p>
+    </footer>
+    <script src="../js/reservation.js"></script>
+</body>
+</html>

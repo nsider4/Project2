@@ -1,0 +1,162 @@
+main img {
+  height: 350px;
+  width: 350px;
+  border-radius: 10%;
+}
+
+/* Basic styling */
+.pricing-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.pricing-column {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.pricing-column h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.check-table {
+  width: 95%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 2px solid #ddd;
+}
+
+.check-table th,
+.check-table td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #ddd;
+}
+
+.check-table th {
+  background-color: #f9f9f9;
+}
+
+.check-table td:first-child {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.check-table td:not(:first-child):nth-child(even) {
+  background-color: #fff;
+}
+
+.check-table td:empty:before {
+  content: '-';
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #ff7f50;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff6347;
+}
+
+
+@media screen and (max-width: 750px) {
+  .pricing-table tr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pricing-column {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
+  .pricing-column img {
+    width: 80%;
+  }
+
+  .pricing-column h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  main img {
+    height: auto;
+    width: 100%;
+    border-radius: 10%; 
+  }
+
+  .pricing-column {
+    padding: 15px;
+  }
+
+  .pricing-column h3 {
+    font-size: 20px; 
+  }
+
+  .price {
+    font-size: 28px; 
+    margin-bottom: 15px; 
+  }
+
+  .pricing-table,
+  .check-table {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .check-table th,
+  .check-table td {
+    padding: 8px; 
+    font-size: 14px; 
+  }
+}
